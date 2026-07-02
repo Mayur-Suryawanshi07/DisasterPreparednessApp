@@ -1,4 +1,4 @@
-package com.example.disastermanagmentapp.core.theme
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
@@ -35,3 +35,13 @@ val OnSecondaryDark = Color.Black
 val OnTertiaryDark = Color.Black
 val OnBackgroundDark = Color(0xFFE6E1E5)    // Light text
 val OnSurfaceDark = Color(0xFFE6E1E5)
+
+// Authentication screens
+val AuthPrimary = Color(0xFF2563A6)
+val AuthText = Color(0xFF172033)
+val AuthMuted = Color(0xFF667085)
+val AuthBorder = Color(0xFFD7E0EA)
+val AuthBackgroundStart = Color(0xFFF5FAFF)
+val AuthBackgroundEnd = Color(0xFFFFFFFF)
+val AuthSurface = Color(0xFFFFFFFF)
+val AuthOnPrimary = Color(0xFFFFFFFF)

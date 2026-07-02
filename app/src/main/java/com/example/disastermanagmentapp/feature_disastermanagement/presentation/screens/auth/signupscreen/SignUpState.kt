@@ -1,4 +1,4 @@
-package com.example.disastermanagmentapp.feature_login.presentation.auth.signupscreen
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.signupscreen
 
 sealed class SignUpState {
     object Authenticated : SignUpState()

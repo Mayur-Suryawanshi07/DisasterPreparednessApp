@@ -1,14 +1,11 @@
-package com.example.disastermanagmentapp.feature_login.presentation.navigation
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.Navigation
 
-import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.example.disastermanagmentapp.core.navigation.Graphs
-import com.example.disastermanagmentapp.core.navigation.Routes
-import com.example.disastermanagmentapp.feature_login.presentation.auth.loginscreen.LogInScreen
-import com.example.disastermanagmentapp.feature_login.presentation.auth.signupscreen.SignUpScreen
+import com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.loginscreen.LogInScreen
+import com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.signupscreen.SignUpScreen
 
 
 fun NavGraphBuilder.authNavScreen( navController: NavHostController) {

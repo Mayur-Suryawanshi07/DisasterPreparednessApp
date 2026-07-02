@@ -5,7 +5,7 @@ import com.example.disastermanagmentapp.feature_disastermanagement.domain.reposi
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class SearchSachetUseCase @Inject constructor(
+class SearchDisaster @Inject constructor(
     private val repository: SachetRepository
 ) {
     operator fun invoke(query: String): Flow<List<DisasterAlert>> {

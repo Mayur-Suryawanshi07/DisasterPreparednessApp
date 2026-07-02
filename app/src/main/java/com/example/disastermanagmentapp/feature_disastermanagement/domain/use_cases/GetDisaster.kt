@@ -5,10 +5,11 @@ import com.example.disastermanagmentapp.feature_disastermanagement.domain.reposi
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class GetSachetByCategoryUseCase @Inject constructor(
+class GetDisaster @Inject constructor(
     private val repository: SachetRepository
 ) {
-    operator fun invoke(categoryId: String): Flow<List<DisasterAlert>> {
-        return repository.getDisasterEventsByCategory(categoryId)
+    operator fun invoke(): Flow<List<DisasterAlert>> {
+        return repository.getDisasterEvents()
     }
+
 }

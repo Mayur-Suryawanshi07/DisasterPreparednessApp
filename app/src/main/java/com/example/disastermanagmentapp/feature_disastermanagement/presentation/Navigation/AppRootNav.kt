@@ -1,16 +1,15 @@
-package com.example.disastermanagmentapp.core.navigation
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.Navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.example.disastermanagmentapp.feature_disastermanagement.presentation.Navigation.mainNavGraph
-import com.example.disastermanagmentapp.feature_login.presentation.navigation.authNavScreen
 
 @Composable
-fun AppRootNav(modifier: Modifier = Modifier) {
+fun AppRootNav( navController: NavHostController) {
 
-    val navController = rememberNavController()
+
     NavHost(
         navController = navController,
         startDestination = Graphs.Auth

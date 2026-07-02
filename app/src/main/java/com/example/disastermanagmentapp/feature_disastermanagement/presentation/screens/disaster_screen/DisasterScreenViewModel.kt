@@ -3,8 +3,8 @@ package com.example.disastermanagmentapp.feature_disastermanagement.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 // Change these imports:
-import com.example.disastermanagmentapp.feature_disastermanagement.domain.use_cases.GetSachetUseCase // Corrected import
-import com.example.disastermanagmentapp.feature_disastermanagement.domain.use_cases.SearchSachetUseCase // Corrected import
+import com.example.disastermanagmentapp.feature_disastermanagement.domain.use_cases.GetDisaster // Corrected import
+import com.example.disastermanagmentapp.feature_disastermanagement.domain.use_cases.SearchDisaster // Corrected import
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -16,8 +16,8 @@ import javax.inject.Inject
 @HiltViewModel
 class DisasterScreenViewModel @Inject constructor(
     // Inject specific Sachet use cases
-    private val getSachetUseCase: GetSachetUseCase, // Changed
-    private val searchSachetUseCase: SearchSachetUseCase // Changed
+    private val getDisaster: GetDisaster, // Changed
+    private val searchDisaster: SearchDisaster // Changed
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(DisasterScreenState())
@@ -33,7 +33,7 @@ class DisasterScreenViewModel @Inject constructor(
 
             try {
                 // Use the injected GetSachetUseCase directly
-                getSachetUseCase().collect { events -> // Changed: directly invoke the use case
+                getDisaster().collect { events -> // Changed: directly invoke the use case
                     val newUiState = if (events.isEmpty()) {
                         DisasterScreenUiState.Empty
                     } else {
@@ -74,7 +74,7 @@ class DisasterScreenViewModel @Inject constructor(
 
             try {
                 // Use the injected SearchSachetUseCase directly
-                searchSachetUseCase(query).collect { events -> // Changed: directly invoke the use case
+                searchDisaster(query).collect { events -> // Changed: directly invoke the use case
                     val newUiState = if (events.isEmpty()) {
                         // Consider a different state for "no search results" vs "general empty"
                         DisasterScreenUiState.Success(emptyList()) // Or a specific NoSearchResults state

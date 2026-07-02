@@ -4,7 +4,7 @@ import com.example.disastermanagmentapp.feature_disastermanagement.domain.model.
 import com.example.disastermanagmentapp.feature_disastermanagement.domain.repository.SachetRepository
 import javax.inject.Inject
 
-class GetSachetByIdUseCase @Inject constructor(
+class GetDisasterById @Inject constructor(
     private val repository : SachetRepository
 ) {
     suspend operator fun invoke(id: String): DisasterAlert? {

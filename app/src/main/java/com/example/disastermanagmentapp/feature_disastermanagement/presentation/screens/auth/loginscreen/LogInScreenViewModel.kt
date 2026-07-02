@@ -1,4 +1,4 @@
-package com.example.disastermanagmentapp.feature_login.presentation.auth.loginscreen
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.loginscreen
 
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth

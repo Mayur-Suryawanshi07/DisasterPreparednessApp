@@ -1,4 +1,4 @@
-package com.example.disastermanagmentapp.feature_login.presentation.auth.loginscreen
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.loginscreen
 
 sealed class LoginUiState{
     object Authorized: LoginUiState()

@@ -1,4 +1,4 @@
-package com.example.disastermanagmentapp.core.navigation
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.Navigation
 
 import kotlinx.serialization.Serializable
 

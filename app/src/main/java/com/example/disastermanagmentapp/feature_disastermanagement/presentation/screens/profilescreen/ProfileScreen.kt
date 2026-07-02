@@ -1,10 +1,8 @@
 package com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.profilescreen
 
-import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -17,12 +15,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.example.disastermanagmentapp.core.navigation.Graphs
-import com.example.disastermanagmentapp.core.navigation.Routes
+import com.example.disastermanagmentapp.feature_disastermanagement.presentation.Navigation.Graphs
 import com.example.disastermanagmentapp.feature_disastermanagement.presentation.component.MyBottomNavBar
 import com.example.disastermanagmentapp.feature_disastermanagement.presentation.component.MyTopAppBar
-import com.example.disastermanagmentapp.feature_login.presentation.auth.loginscreen.LogInScreenViewModel
-import com.example.disastermanagmentapp.feature_login.presentation.auth.loginscreen.LoginUiState
+import com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.loginscreen.LogInScreenViewModel
+import com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.loginscreen.LoginUiState
 
 @Composable
 fun ProfileScreen(

@@ -16,8 +16,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.example.disastermanagmentapp.core.navigation.Graphs
-import com.example.disastermanagmentapp.core.navigation.Routes
+import com.example.disastermanagmentapp.feature_disastermanagement.presentation.Navigation.Graphs
+import com.example.disastermanagmentapp.feature_disastermanagement.presentation.Navigation.Routes
 
 @Composable
 fun MyBottomNavBar(

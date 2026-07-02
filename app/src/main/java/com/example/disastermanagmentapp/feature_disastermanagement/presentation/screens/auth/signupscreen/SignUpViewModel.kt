@@ -1,14 +1,11 @@
-package com.example.disastermanagmentapp.feature_login.presentation.auth.signupscreen
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.screens.auth.signupscreen
 
-import androidx.compose.runtime.collectAsState
 import androidx.lifecycle.ViewModel
-import com.example.disastermanagmentapp.feature_login.presentation.auth.loginscreen.LoginUiState
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
-
 
 class SignUpViewModel : ViewModel() {
 
@@ -22,43 +19,35 @@ class SignUpViewModel : ViewModel() {
     }
 
     fun checkAuthentication() {
-        if (auth.currentUser == null) {
-            _state.update {
+        _state.update {
+            if (auth.currentUser == null) {
                 SignUpState.Unauthenticated
-            }
-        } else {
-            _state.update {
+            } else {
                 SignUpState.Authenticated
             }
         }
     }
 
     fun signup(email: String, password: String) {
-        _state.update {
-            SignUpState.Loading
+        if (email.isBlank() || password.isBlank()) {
+            _state.update {
+                SignUpState.Error("Email and password cannot be empty")
+            }
+            return
         }
 
-        if (email.isEmpty() || password.isEmpty()) {
-            _state.update {
-                SignUpState.Error("Email and Password Cannot be empty")
-            }
-        }
+        _state.update { SignUpState.Loading }
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    _state.update {
+                _state.update {
+                    if (task.isSuccessful) {
                         SignUpState.Authenticated
-                    }
-                } else {
-                    _state.update {
-                        SignUpState.Unauthenticated
+                    } else {
+                        SignUpState.Error(
+                            task.exception?.localizedMessage ?: "Unable to create your account"
+                        )
                     }
                 }
             }
     }
-
-
-
-
 }
-

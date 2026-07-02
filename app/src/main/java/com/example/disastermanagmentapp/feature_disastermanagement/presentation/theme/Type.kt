@@ -1,4 +1,4 @@
-package com.example.disastermanagmentapp.core.theme
+package com.example.disastermanagmentapp.feature_disastermanagement.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
