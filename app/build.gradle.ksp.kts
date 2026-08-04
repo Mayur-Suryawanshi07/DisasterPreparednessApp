@@ -11,7 +11,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.disastermanagmentapp"
+    namespace = "com.example.disasterpreparednessapp"
     compileSdk = 36
 
     defaultConfig {

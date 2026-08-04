@@ -16,8 +16,8 @@ navigationFragment = "2.9.3"
 navigationTesting = "2.9.3"
 navigationUi = "2.9.3"
 roomKtx = "2.7.2"
-agp = "8.13.2" # Latest stable AGP
-kotlin = "2.2.0" # Back to 2.2.0
+agp = "9.3.1" # Latest stable AGP
+kotlin = "2.2.10" # Back to 2.2.0
 hilt = "2.53" # Updated to support Kotlin 2.2.0
 composeBom = "2024.10.00" # Latest stable Compose BOM
 compose-compiler = "2.2.0" # Matches Kotlin 2.2.0
@@ -42,7 +42,10 @@ googleGmsGoogleServices = "4.4.3" # Latest stable Google Services
 firebaseAuth = "24.0.1" # Latest stable Firebase Auth
 mockito = "5.5.0" # Latest stable Mockito
 mockitoKotlin = "5.0.0" # Latest stable Mockito-Kotlin
-coroutinesTest = "1.8.0" # Latest stable Coroutines Test
+coroutinesTest = "1.8.0"
+credentials = "1.6.0"
+credentialsPlayServicesAuth = "1.6.0"
+googleid = "1.2.0" # Latest stable Coroutines Test
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -97,6 +100,9 @@ hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-com
 mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
 mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+androidx-credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+androidx-credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -11,11 +11,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.disastermanagmentapp"
+    namespace = "com.example.disasterpreparednessapp"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.disastermanagmentapp"
+        applicationId = "com.example.disasterpreparednessapp"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -58,6 +58,8 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
@@ -65,6 +67,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.googleid)
     implementation(libs.litert.support.api)
     implementation(libs.androidx.lifecycle.viewmodel.android)
     implementation(libs.firebase.auth)
