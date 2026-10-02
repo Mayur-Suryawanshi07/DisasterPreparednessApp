@@ -1,7 +1,11 @@
 package com.example.disasterpreparednessapp.feature_disastermanagement.di
 
-import com.example.disasterpreparednessapp.feature_disastermanagement.data.repository.SachetRepositoryImpl
-import com.example.disasterpreparednessapp.feature_disastermanagement.domain.repository.SachetRepository
+import com.example.disasterpreparednessapp.feature_disastermanagement.data.repository.DisasterNotificationRepositoryImpl
+import com.example.disasterpreparednessapp.feature_disastermanagement.data.repository.DisasterRepositoryImpl
+import com.example.disasterpreparednessapp.feature_disastermanagement.data.repository.WeatherRepositoryImpl
+import com.example.disasterpreparednessapp.feature_disastermanagement.domain.repository.DisasterNotificationRepository
+import com.example.disasterpreparednessapp.feature_disastermanagement.domain.repository.DisasterRepository
+import com.example.disasterpreparednessapp.feature_disastermanagement.domain.repository.WeatherRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -15,6 +19,18 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindSachetRepository(
-        sachetRepositoryImpl: SachetRepositoryImpl
-    ): SachetRepository
+        sachetRepositoryImpl: DisasterRepositoryImpl
+    ): DisasterRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindWeatherRepository(
+        weatherRepositoryImpl: WeatherRepositoryImpl
+    ): WeatherRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindDisasterNotificationRepository(
+        disasterNotificationRepositoryImpl: DisasterNotificationRepositoryImpl
+    ): DisasterNotificationRepository
 }

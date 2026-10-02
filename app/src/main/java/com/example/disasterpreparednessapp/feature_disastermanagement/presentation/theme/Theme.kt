@@ -12,36 +12,53 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = PrimaryOrange,
-    secondary = SecondaryAmber,
-    tertiary = TertiaryBrown,
-    background = DarkWarmBrown,
-    surface = DarkWarmBrown,
+    primary = Color(0xFF4C8DFF), // Vibrant Blue for Dark Mode buttons & highlights
     onPrimary = Color.White,
+
+    secondary = Color(0xFF90CAF9),
     onSecondary = Color.Black,
-    onTertiary = Color.White,
-    onBackground = Color(0xFFE6E1E5),
-    onSurface = Color(0xFFE6E1E5)
+
+    tertiary = Color(0xFF80DEEA),
+    onTertiary = Color.Black,
+
+    background = Color(0xFF0F172A), // Deep Slate Dark Background
+    onBackground = Color(0xFFF8FAFC), // High-contrast White for background text
+
+    surface = Color(0xFF1E293B), // Elevated Dark Card Surface
+    onSurface = Color(0xFFF8FAFC), // High-contrast White for text inside surface cards
+
+    surfaceVariant = Color(0xFF334155),
+    onSurfaceVariant = Color(0xFFCBD5E1), // Light Gray for labels & muted text
+
+    outline = Color(0xFF64748B) // Border color for input fields
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = PrimaryBlue,
-    secondary = SecondaryGrey,
-    tertiary = TertiaryGreen,
-    background = BackgroundLight,
-    surface = SurfaceLight,
-    onPrimary = OnPrimaryLight,
-    onSecondary = OnSecondaryLight,
-    onTertiary = OnTertiaryLight,
-    onBackground = OnBackgroundLight,
-    onSurface = OnSurfaceLight
+    primary = Ink, // Dark Navy Blue
+    onPrimary = AppWhite,
+
+    secondary = InkMuted,
+    onSecondary = AppWhite,
+
+    tertiary = Accent,
+    onTertiary = AppWhite,
+
+    background = Canvas, // Pure White
+    onBackground = Charcoal,
+
+    surface = AppWhite,
+    onSurface = Charcoal,
+
+    surfaceVariant = SurfaceTint,
+    onSurfaceVariant = Muted,
+
+    outline = Border
 )
 
 @Composable
 fun DisasterManagmentAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = false, // Set to false to use custom scheme
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

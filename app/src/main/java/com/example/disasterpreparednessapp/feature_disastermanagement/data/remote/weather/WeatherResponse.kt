@@ -1,0 +1,56 @@
+package com.example.disasterpreparednessapp.feature_disastermanagement.data.remote.weather
+
+data class WeatherResponse(
+    val base: String,
+    val clouds: Clouds,
+    val cod: Int,
+    val coord: Coord,
+    val dt: Long,
+    val id: Int,
+    val main: Main,
+    val name: String,
+    val rain: Rain? = null,
+    val sys: Sys,
+    val timezone: Int,
+    val visibility: Int,
+    val weather: List<Weather>,
+    val wind: Wind
+)
+
+data class Rain(
+    val `1h`: Double? = null
+)
+
+data class Wind(
+    val deg: Int,
+    val gust: Double? = null,
+    val speed: Double
+)
+
+data class Clouds(
+    val all: Int
+)
+
+data class Coord(
+    val lat: Double,
+    val lon: Double
+)
+
+data class Main(
+    val feels_like: Double,
+    val grnd_level: Int,
+    val humidity: Int,
+    val pressure: Int,
+    val sea_level: Int,
+    val temp: Double,
+    val temp_max: Double,
+    val temp_min: Double
+)
+
+data class Sys(
+    val country: String,
+    val id: Int,
+    val sunrise: Long,
+    val sunset: Long,
+    val type: Int
+)

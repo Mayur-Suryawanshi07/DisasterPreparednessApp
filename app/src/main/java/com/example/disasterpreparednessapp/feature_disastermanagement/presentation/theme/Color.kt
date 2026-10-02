@@ -1,53 +1,71 @@
 package com.example.disasterpreparednessapp.feature_disastermanagement.presentation.theme
 
+
 import androidx.compose.ui.graphics.Color
 
+// Core
+val AppWhite = Color(0xFFFFFFFF)
+val AppBlack = Color(0xFF000000)
+val AppTransparent = Color.Transparent
 
-// New warmer colors for Disaster Management App
-val PrimaryOrange = Color(0xFFF57C00)
-val SecondaryAmber = Color(0xFFFFB300)
-val TertiaryBrown = Color(0xFF8D6E63)
+// Brand
+val Ink = Color(0xFF002F6C) // Dark Navy Blue
+val Canvas = Color(0xFFFFFFFF) // White background
+val Charcoal = Color(0xFF111B27)
+val Muted = Color(0xFF526373)
+val SurfaceTint = Color(0xFFF2F2F2) // Light Gray for search bar
+val Accent = Color(0xFF002F6C)
+val Warning = Color(0xFFFFD600) // Vibrant Yellow
+val Error = Color(0xFFFF8C00) // Vibrant Orange for Moderate
 
-// Background colors
-val WarmBeige = Color(0xFFFFF3E0)
-val DarkWarmBrown = Color(0xFF3E2723)
+// Derived
+val InkMuted = Ink.copy(alpha = 0.68f)
+val InkDivider = Ink.copy(alpha = 0.16f)
+val Border = Ink.copy(alpha = 0.12f)
+val Overlay = AppWhite.copy(alpha = 0.42f)
 
-// 🔹 Light Theme Colors
-val PrimaryBlue = Color(0xFF1565C0)       // Trust / Reliability
-val SecondaryGrey = Color(0xFF546E7A)     // Neutral Info
-val TertiaryGreen = Color(0xFF2E7D32)     // Safe / Positive
-val BackgroundLight = Color(0xFFF5F5F5)   // App Background
-val SurfaceLight = Color(0xFFFFFFFF)      // Card/Surface
-val OnPrimaryLight = Color.White
-val OnSecondaryLight = Color.White
-val OnTertiaryLight = Color.White
-val OnBackgroundLight = Color(0xFF1C1B1F) // Dark text
-val OnSurfaceLight = Color(0xFF1C1B1F)
+// Alert severity
+val CriticalBg = Color(0xFFFF8C00) // Orange
+val WarningBg = Color(0xFFFFD600) // Yellow
+val InfoBg = Color(0xFFE3F0FA)
 
-// 🔹 Dark Theme Colors
-val PrimaryBlueDark = Color(0xFF90CAF9)     // Light Blue
-val SecondaryGreyDark = Color(0xFFB0BEC5)   // Soft Grey Blue
-val TertiaryGreenDark = Color(0xFF81C784)   // Soft Green
-val BackgroundDark = Color(0xFF121212)      // Dark Background
-val SurfaceDark = Color(0xFF1E1E1E)         // Dark Surface
-val OnPrimaryDark = Color.Black
-val OnSecondaryDark = Color.Black
-val OnTertiaryDark = Color.Black
-val OnBackgroundDark = Color(0xFFE6E1E5)    // Light text
-val OnSurfaceDark = Color(0xFFE6E1E5)
+// Additional colors for Disaster Cards
+val CrimsonRed = Color(0xFF000000) // Text is black
+val LightCoral = Color(0xFFFF8C00) // Severe Orange
+val PaleCoral = Color(0xFFFFD600) // Low Yellow
+val CoralPink = Color(0xFF000000)
 
-// Authentication screens
-val AuthPrimary = Color(0xFF2563A6)
-val AuthText = Color(0xFF172033)
-val AuthMuted = Color(0xFF667085)
-val AuthBorder = Color(0xFFD7E0EA)
-val AuthBackgroundStart = Color(0xFFF5FAFF)
-val AuthBackgroundEnd = Color(0xFFFFFFFF)
-val AuthSurface = Color(0xFFFFFFFF)
-val AuthOnPrimary = Color(0xFFFFFFFF)
+val AmberBrown = Color(0xFF000000)
+val Cream = Color(0xFFFFD600)
+val LightAmber = Color(0xFFFFD600)
+val Wheat = Color(0xFF000000)
+
+val OceanBlue = Color(0xFF002F6C)
+val SkyBlueLight = Color(0xFFE1F5FE)
+val PowderBlue = Color(0xFFB0E0E6)
+val SoftSkyBlue = Color(0xFF87CEEB)
+
+val DarkSlate = Color(0xFF2F4F4F)
+val MediumSlate = Color(0xFF708090)
+
+// Standard colors
+val ErrorRed = Color(0xFFD32F2F)
+val AppLightGray = Color(0xFFF2F2F2)
+val Slate = Color(0xFF546E7A)
+val SlateMuted = Color(0xFF90A4AE)
+val AmberGold = Color(0xFFFFD600)
+val PaleBlue = Color(0xFFE0E0E0)
+val WhiteOverlay42 = Color(0x33000000)
+
+// Auth related
+val AuthPrimary = Ink
+val AuthOnPrimary = AppWhite
+val AuthMuted = InkMuted
+val AuthBorder = Border
 
 
-//disaster screen
-val Ink = Color(0xFF10243B)
-val Canvas = Color(0xFFF5F7FA)
-val goldenYellow=Color(0xFFFCB544)
+ val AlertCardYellow = Color(0xFFFFD600)
+ val AlertCardOrange = Color(0xFFFF8C00)
+val AlertErrorRed = Color(0xFFE74141)
+
+
