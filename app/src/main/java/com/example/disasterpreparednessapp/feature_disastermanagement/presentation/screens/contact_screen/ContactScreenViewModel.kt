@@ -3,7 +3,7 @@ package com.example.disasterpreparednessapp.feature_disastermanagement.presentat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.disasterpreparednessapp.R
-import com.example.disasterpreparednessapp.feature_disastermanagement.domain.use_cases.AllUseCases
+import com.example.disasterpreparednessapp.feature_disastermanagement.domain.use_cases.disaster.AllUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ContactScreenViewModel @Inject constructor(
-    private val SatchUseCase: AllUseCases
+    private val allUseCases: AllUseCases
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(ContactScreenState())
@@ -31,60 +31,33 @@ class ContactScreenViewModel @Inject constructor(
             try {
                 val contacts = listOf(
                     EmergencyContact(
-                        id = 1,
-                        imageResId = R.drawable.police,
-                        name = "Call Police",
-                        phoneNumber = "100",
-                        actionType = ContactActionType.PHONE_CALL
-                    ),
-                    EmergencyContact(
-                        id = 2,
-                        imageResId = R.drawable.docter,
-                        name = "Call Doctor",
-                        actionType = ContactActionType.OPEN_CONTACTS
-                    ),
-                    EmergencyContact(
-                        id = 3,
-                        imageResId = R.drawable.ambulance,
-                        name = "Call Ambulance",
-                        phoneNumber = "102",
-                        actionType = ContactActionType.PHONE_CALL
-                    ),
-                    EmergencyContact(
                         id = 4,
-                        imageResId = R.drawable.fire,
-                        name = "Call Fire Service",
-                        phoneNumber = "101",
-                        actionType = ContactActionType.PHONE_CALL
+                        imageResId = R.drawable.national_agency_logo,
+                        name = "NDMA Website",
+                        actionType = ContactActionType.OPEN_NDMA
                     ),
                     EmergencyContact(
                         id = 5,
                         imageResId = R.drawable.weater_forecast,
-                        name = "Check Weather",
+                        name = "Weather Updates",
                         actionType = ContactActionType.OPEN_WEATHER
                     ),
                     EmergencyContact(
                         id = 6,
-                        imageResId = R.drawable.first_aid,
-                        name = "First Aid Instruction",
+                        imageResId = R.drawable.medical_tips,
+                        name = "First Aid Guide",
                         actionType = ContactActionType.OPEN_FIRST_AID
                     ),
                     EmergencyContact(
                         id = 7,
                         imageResId = R.drawable.tips_logo,
-                        name = "Safety tips",
+                        name = "Safety Tips",
                         actionType = ContactActionType.OPEN_SAFETY_TIPS
                     ),
                     EmergencyContact(
                         id = 8,
-                        imageResId = R.drawable.national_agency_logo,
-                        name = "National Disaster Management Authority",
-                        actionType = ContactActionType.OPEN_NDMA
-                    ),
-                    EmergencyContact(
-                        id = 9,
-                        imageResId = R.drawable.report_logo2,
-                        name = "Report A Disaster",
+                        imageResId = R.drawable.report_logo,
+                        name = "Report Incident",
                         actionType = ContactActionType.OPEN_REPORT
                     )
                 )
