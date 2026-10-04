@@ -201,7 +201,7 @@ fun DisasterDetailCard(
             Spacer(Modifier.height(8.dp))
 
             Text(
-                text = description,
+                text = event,
                 modifier = Modifier.padding(horizontal = 16.dp),
                 style = MaterialTheme.typography.bodyLarge,
                 color = Color.Black,

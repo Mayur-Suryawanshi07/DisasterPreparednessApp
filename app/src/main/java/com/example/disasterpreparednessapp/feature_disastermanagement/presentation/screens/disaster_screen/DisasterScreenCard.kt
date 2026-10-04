@@ -103,9 +103,9 @@ fun DisasterScreenEventCard(
         urgency = capInfo?.urgency
     )
     val intensityDrawable = when (capInfo?.severity) {
-        "Severe" -> com.example.disasterpreparednessapp.R.drawable.moderate_severity
-        "Moderate" -> com.example.disasterpreparednessapp.R.drawable.low_severity
-        else -> com.example.disasterpreparednessapp.R.drawable.high_severity
+        "Severe" -> com.example.disasterpreparednessapp.R.drawable.image_medium_severity
+        "Moderate" -> com.example.disasterpreparednessapp.R.drawable.img_low_severity
+        else -> com.example.disasterpreparednessapp.R.drawable.img_high_severity
     }
 
     Card(

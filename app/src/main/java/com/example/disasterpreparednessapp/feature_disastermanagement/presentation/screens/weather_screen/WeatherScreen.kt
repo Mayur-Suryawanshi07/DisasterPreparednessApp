@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -35,6 +34,7 @@ import androidx.core.app.ActivityCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.disasterpreparednessapp.MainActivity
+import com.example.disasterpreparednessapp.feature_disastermanagement.presentation.component.WeatherShimmer
 import com.example.disasterpreparednessapp.feature_location.viewmodel.LocationViewModel
 
 @Composable
@@ -48,6 +48,7 @@ fun WeatherScreen(
     val locationData by locationViewModel.location.collectAsState()
 
     var city by remember { mutableStateOf("") }
+    var fetchedLocation by remember { mutableStateOf<Pair<Double, Double>?>(null) }
     val context = LocalContext.current
 
     val requestPermissionLauncher = rememberLauncherForActivityResult(
@@ -89,8 +90,14 @@ fun WeatherScreen(
     }
 
     LaunchedEffect(locationData) {
-        locationData?.let {
-            viewModel.searchWeatherByLatLong(it.latitude, it.longitude)
+        locationData?.let { loc ->
+            val prev = fetchedLocation
+            val latChanged = prev == null || Math.abs(prev.first - loc.latitude) > 0.01
+            val lngChanged = prev == null || Math.abs(prev.second - loc.longitude) > 0.01
+            if (latChanged || lngChanged) {
+                fetchedLocation = Pair(loc.latitude, loc.longitude)
+                viewModel.searchWeatherByLatLong(loc.latitude, loc.longitude)
+            }
         }
     }
 
@@ -130,9 +137,7 @@ fun WeatherResult(uiState: WeatherUiState) {
             }
         }
         is WeatherUiState.Loading -> {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                CircularProgressIndicator()
-            }
+            WeatherShimmer()
         }
         is WeatherUiState.Success -> {
             WeatherSuccessContent(uiState.weather)

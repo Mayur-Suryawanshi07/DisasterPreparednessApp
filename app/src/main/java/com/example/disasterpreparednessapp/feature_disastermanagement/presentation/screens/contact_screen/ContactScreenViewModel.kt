@@ -32,31 +32,31 @@ class ContactScreenViewModel @Inject constructor(
                 val contacts = listOf(
                     EmergencyContact(
                         id = 4,
-                        imageResId = R.drawable.national_agency_logo,
+                        imageResId = R.drawable.ic_national_agency_logo,
                         name = "NDMA Website",
                         actionType = ContactActionType.OPEN_NDMA
                     ),
                     EmergencyContact(
                         id = 5,
-                        imageResId = R.drawable.weater_forecast,
+                        imageResId = R.drawable.ic_weater_forecast,
                         name = "Weather Updates",
                         actionType = ContactActionType.OPEN_WEATHER
                     ),
                     EmergencyContact(
                         id = 6,
-                        imageResId = R.drawable.medical_tips,
+                        imageResId = R.drawable.ic_medical_tips,
                         name = "First Aid Guide",
                         actionType = ContactActionType.OPEN_FIRST_AID
                     ),
                     EmergencyContact(
                         id = 7,
-                        imageResId = R.drawable.tips_logo,
+                        imageResId = R.drawable.ic_tips_logo,
                         name = "Safety Tips",
                         actionType = ContactActionType.OPEN_SAFETY_TIPS
                     ),
                     EmergencyContact(
                         id = 8,
-                        imageResId = R.drawable.report_logo,
+                        imageResId = R.drawable.ic_report_logo,
                         name = "Report Incident",
                         actionType = ContactActionType.OPEN_REPORT
                     )

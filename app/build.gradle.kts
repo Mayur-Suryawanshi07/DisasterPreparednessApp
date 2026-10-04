@@ -102,7 +102,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Jetpack Compose integration
+    // splash screen
+    implementation("androidx.core:core-splashscreen:1.0.1")
 
     // Views/Fragments integration
     implementation(libs.androidx.navigation.fragment)
