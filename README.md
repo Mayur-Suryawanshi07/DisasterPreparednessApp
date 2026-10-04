@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ RescuNet
+# 🛡️DisasterPreparednessApp
 
 ### Real-Time Emergency Warning & Disaster Preparedness Platform for Android
 
@@ -14,7 +14,8 @@
 
 <br/>
 
-**RescuNet** is an Android public safety and emergency management application that delivers real-time disaster warnings from official national feeds, provides interactive geospatial hazard mapping, and equips citizens with one-tap SOS emergency tools and weather forecasts.
+**DisasterPreparednessApp** 
+is an Android public safety and emergency management application that delivers real-time disaster warnings from official national feeds, provides interactive geospatial hazard mapping, and equips citizens with one-tap SOS emergency tools and weather forecasts.
 
 *Designed for citizens, first responders, and emergency response teams seeking real-time hazard alerts and safety guidance.*
 
