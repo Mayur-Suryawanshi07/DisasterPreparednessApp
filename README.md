@@ -29,37 +29,29 @@
     <tr>
       <td align="center" width="25%">
         <b>Active Disaster Feed</b><br/><br/>
-        <img src="docs/screenshots/disaster_feed.png" width="200" alt="Active Disaster Feed"/>
+        <img src="screenshots/HomeScreen.jpg" width="200" alt="Active Disaster Feed"/>
       </td>
       <td align="center" width="25%">
         <b>Interactive Alert Map</b><br/><br/>
-        <img src="docs/screenshots/alert_map.png" width="200" alt="Interactive Alert Map"/>
+        <img src="screenshots/DisasterDetailScreen.jpg" width="200" alt="Interactive Alert Map"/>
       </td>
       <td align="center" width="25%">
         <b>Weather Forecast</b><br/><br/>
-        <img src="docs/screenshots/weather_forecast.png" width="200" alt="Weather Forecast"/>
-      </td>
-      <td align="center" width="25%">
-        <b>SOS Emergency Request</b><br/><br/>
-        <img src="docs/screenshots/sos_emergency.png" width="200" alt="SOS Emergency Request"/>
+        <img src="screenshots/WeatherScreen.jpg" width="200" alt="Weather Forecast"/>
       </td>
     </tr>
     <tr>
       <td align="center" width="25%">
         <b>Disaster Detail Brief</b><br/><br/>
-        <img src="docs/screenshots/disaster_detail.png" width="200" alt="Disaster Detail Brief"/>
+        <img src="screenshots/DisasterDetailScreen.jpg" width="200" alt="Disaster Detail Brief"/>
       </td>
       <td align="center" width="25%">
         <b>Emergency Contacts</b><br/><br/>
-        <img src="docs/screenshots/emergency_contacts.png" width="200" alt="Emergency Contacts"/>
+        <img src="screenshots/ContactScreen.jpg" width="200" alt="Emergency Contacts"/>
       </td>
       <td align="center" width="25%">
         <b>User Profile & Settings</b><br/><br/>
-        <img src="docs/screenshots/user_profile.png" width="200" alt="User Profile"/>
-      </td>
-      <td align="center" width="25%">
-        <b>Dark Mode Theme</b><br/><br/>
-        <img src="docs/screenshots/dark_mode.png" width="200" alt="Dark Mode"/>
+        <img src="screenshots/ProfileScreen.jpg" width="200" alt="User Profile"/>
       </td>
     </tr>
   </table>

@@ -108,7 +108,7 @@ fun DisasterScreen(
                 icon = {
                     Icon(
                         Icons.Default.Warning,
-                        contentDescription = "Request Help (SOS)"
+                        contentDescription = "Help (SOS)"
                     )
                 },
                 text = {
