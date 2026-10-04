@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ RescuNet
+# 🛡️ DisasterPreparednessApp
 
 ### Real-Time Emergency Warning & Disaster Preparedness Platform for Android
 
