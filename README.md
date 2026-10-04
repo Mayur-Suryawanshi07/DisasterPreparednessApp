@@ -197,10 +197,3 @@ Contributions are welcome! Follow these steps to contribute:
 
 Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
 
----
-
-## 👤 Author
-
-**RescuNet Team**
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: contact@rescunet.org
