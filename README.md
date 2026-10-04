@@ -29,7 +29,7 @@
     <tr>
       <td align="center" width="25%">
         <b>Active Disaster Feed</b><br/><br/>
-        <img src="docs/screenshots/disaster_feed.png" width="200" alt="Active Disaster Feed"/>
+        <img src="C:\Users\Mayur\OneDrive\Desktop\disaster" width="200" alt="Active Disaster Feed"/>
       </td>
       <td align="center" width="25%">
         <b>Interactive Alert Map</b><br/><br/>
@@ -179,12 +179,11 @@ Run UI and Compose tests on a connected device:
 ## 🗺️ Roadmap
 
 - [x] NDMA Sachet CAP XML feed integration and alert parsing.
-- [x] Google Maps geospatial polygon boundary rendering.
-- [x] Finger-slidable bottom sheet with gesture velocity tracking.
-- [x] FCM push notifications & WorkManager background polling.
+- [x] Google Maps Markers for the Location.
 - [x] SOS emergency request generator with location tagging.
-- [ ] Offline-first tile caching for low-connectivity hazard zones.
+- [ ] Multi-Modular architecture.
 - [ ] Multi-language support (Hindi, Tamil, Telugu, Bengali, Marathi).
+- [ ] FCM push notifications & WorkManager background polling
 - [ ] Crowd-sourced emergency shelter and food distribution point reporting.
 
 ---
@@ -206,9 +205,3 @@ Contributions are welcome! Follow these steps to contribute:
 Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
 
 ---
-
-## 👤 Author
-
-**RescuNet Team**
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: contact@rescunet.org
