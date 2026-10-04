@@ -29,7 +29,7 @@
     <tr>
       <td align="center" width="25%">
         <b>Active Disaster Feed</b><br/><br/>
-        <img src="C:\Users\Mayur\OneDrive\Desktop\disaster" width="200" alt="Active Disaster Feed"/>
+        <img src="screenshots/HomeScreen.jpg" width="200" alt="Active Disaster Feed"/>
       </td>
       <td align="center" width="25%">
         <b>Interactive Alert Map</b><br/><br/>
